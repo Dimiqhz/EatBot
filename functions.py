@@ -64,7 +64,7 @@ def func_output_gis(bot, call):
         if len > 1:
             button = types.InlineKeyboardButton(text='Хочу другое место', callback_data='var')
             keyboard.add(button)
-        button1 = types.InlineKeyboardButton(text='McDonald’s', callback_data='McDonald’s')
+        button1 = types.InlineKeyboardButton(text='Вкусно и Точка', callback_data='Вкусно и Точка')
         button2 = types.InlineKeyboardButton(text='KFC', callback_data='KFC')
         keyboard.add(button1, button2)
         button3 = types.InlineKeyboardButton(text='Subway', callback_data='Subway')  
@@ -93,7 +93,7 @@ def func_var(bot, call):
     keyboard = types.InlineKeyboardMarkup()
     button = types.InlineKeyboardButton(text='Выбрать другое место', callback_data='var')
     keyboard.add(button)
-    button1 = types.InlineKeyboardButton(text='McDonald’s', callback_data='McDonald’s')
+    button1 = types.InlineKeyboardButton(text='Вкусно и Точка', callback_data='Вкусно и Точка')
     button2 = types.InlineKeyboardButton(text='KFC', callback_data='KFC')
     keyboard.add(button1, button2)
     button3 = types.InlineKeyboardButton(text='Subway', callback_data='Subway')  
@@ -110,7 +110,7 @@ def func_var(bot, call):
 # функция создания inline клавиатуры
 def func_inline_button(bot, c_id, text):
     keyboard = types.InlineKeyboardMarkup(row_width=5)
-    button1 = types.InlineKeyboardButton(text='McDonald’s', callback_data='McDonald’s')
+    button1 = types.InlineKeyboardButton(text='Вкусно и Точка', callback_data='Вкусно и Точка')
     button2 = types.InlineKeyboardButton(text='KFC', callback_data='KFC')
     keyboard.add(button1, button2)
     button3 = types.InlineKeyboardButton(text='Subway', callback_data='Subway')  
